@@ -6,7 +6,7 @@ CPPC=g++
 LINK=g++
 SRCDIR=src
 OBJDIR=obj
-FLAGS=-W -Wall -ggdb -O2 -D_REENTRANT -pthread -D__STDC_LIMIT_MACROS=1 -D__STDC_CONSTANT_MACROS=1 -D__STDC_FORMAT_MACROS==1 -std=gnu++98 -D_GNU_SOURCE
+FLAGS=-W -Wall -ggdb -O2 -D_REENTRANT -pthread -D__STDC_LIMIT_MACROS=1 -D__STDC_CONSTANT_MACROS=1 -D__STDC_FORMAT_MACROS==1 -std=gnu++11 -D_GNU_SOURCE
 LIBS=-lavcodec -lavformat -lswscale -lavutil
 OBJS=$(OBJDIR)/qav.o $(OBJDIR)/stats.o $(OBJDIR)/main.o $(OBJDIR)/settings.o 
 EXEC=qpsnr
